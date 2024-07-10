@@ -2,6 +2,7 @@
   font-family: silkserif;
   src: url(./icon/silkserif-lightitalic-webfont.ttf);
 }
+
 /* Basic Code */
 * {
   margin: 0;
@@ -10,6 +11,7 @@
   font-family: "Alef";
   color: white;
 }
+
 html.body {
   height: 100%;
   width: 100%;
@@ -55,12 +57,12 @@ html.body {
   text-transform: uppercase;
   font-style: italic;
   font-weight: 400;
-  animation: anime;
+  animation: anime1;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-@keyframes anime {
+@keyframes anime1 {
   0% {
     font-family: "Alef";
     -webkit-text-stroke: 1px #fff;
@@ -68,6 +70,7 @@ html.body {
     font-weight: 900;
     opacity: 1;
   }
+
   47% {
     font-family: "Alef";
     -webkit-text-stroke: 1px #fff;
@@ -75,6 +78,7 @@ html.body {
     font-weight: 900;
     opacity: 0;
   }
+
   50% {
     font-family: "silk serif";
     -webkit-text-stroke: 1px #fff;
@@ -82,6 +86,7 @@ html.body {
     font-weight: 900;
     opacity: 1;
   }
+
   100% {
     font-family: "silk serif";
     -webkit-text-stroke: 1px #fff;
@@ -97,13 +102,16 @@ html.body {
   font-weight: 100;
   font-family: "silkserif";
 }
+
 #line1-part1 h6 {
   padding-right: 2vw;
 }
+
 #line1-part1 h5 {
   width: 5vw;
   text-align: right;
 }
+
 .line h1 {
   font-size: 7vw;
   text-transform: uppercase;
@@ -212,6 +220,7 @@ html.body {
   position: relative;
   width: 100%;
   padding: 7vh 0;
+  background-color: rgb(27, 26, 26);
 }
 
 #page4-content {
@@ -250,8 +259,6 @@ html.body {
 }
 
 #page4-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -276,7 +283,6 @@ html.body {
 }
 
 .blue-div-elem {
-  
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -296,5 +302,90 @@ html.body {
 }
 
 #page4-content .underline:nth-last-child(1) {
-  margin: 26vw 0 7vw 0;
+  margin: 6vw 0 7vw 0;
+}
+.pg p{
+  font-family: silkserif;
+}
+
+
+/* page5 code start */
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgb(27, 26, 26);
+}
+
+.elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+
+.elem h1 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: anime;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+
+.elem2 h1 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  transform: translateX(calc(-100% - 20px));
+  animation-name: anime;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.elem span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+
+.elem2 span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
 }
