@@ -18,6 +18,7 @@ html.body {
 #main {
   position: relative;
   background-color: #111;
+  overflow-x: hidden;
 }
 
 /* cursor */
@@ -131,8 +132,6 @@ html.body {
   background-color: rgb(27, 26, 26);
 }
 
-
-
 /* page1 navbar Code */
 
 #page1 #nav {
@@ -170,14 +169,132 @@ html.body {
   font-size: 7vw;
   text-transform: uppercase;
   line-height: 7vw;
+  border-bottom: 0.6vw solid white;
+  transition: all ease 0.7s;
 }
 
 #hero3 {
   display: flex;
 }
 
-#hero3 h2:hover{
-   -webkit-text-stroke: .4px #fff;
-   color: transparent;
-   font-weight: 100;
+#hero3 h2:hover {
+  -webkit-text-stroke: 0.4px #fff;
+  color: transparent;
+  font-weight: 100;
+  border-bottom: 0.5vw solid #ffffff00;
+}
+
+/* page2 code start */
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(27, 26, 26);
+}
+
+#video-container {
+  height: 80vh;
+  width: 72vw;
+  position: relative;
+  left: 27%;
+}
+
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* page3 code start */
+
+/* page4 code start */
+#page4 {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding: 7vh 0;
+}
+
+#page4-content {
+  width: 72vw;
+  position: relative;
+  margin-left: 28%;
+}
+
+#page4-content h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#page4-content h1::before {
+  content: "03";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silkserif";
+  left: -12%;
+  top: 8%;
+}
+
+#page4-content .underline {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
+}
+
+#page4-content > p {
+  font-size: 2.05vw;
+  width: 50%;
+  margin-bottom: 3vw;
+}
+
+#page4-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page4-flex img {
+  width: 48%;
+}
+
+#page4-flex p {
+  font-size: 0.9vw;
+  width: 19%;
+  margin-left: 1vw;
+}
+
+/* page4 blue div */
+#page4-blue-div {
+  background-color: #3f7df4;
+  width: 30vw;
+  padding: 3.2vw;
+  position: relative;
+  margin-top: -33vh;
+  margin-left: 25vw;
+}
+
+.blue-div-elem {
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.7vw 0;
+  border-bottom: 2px solid #ffffff94;
+}
+
+.blue-div-elem h4 {
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+
+.blue-div-elem p {
+  width: 40%;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+#page4-content .underline:nth-last-child(1) {
+  margin: 26vw 0 7vw 0;
 }

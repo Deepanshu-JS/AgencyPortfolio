@@ -1,4 +1,3 @@
-
 // Loader Code
 function Createloader() {
   var tl = gsap.timeline();
@@ -7,7 +6,7 @@ function Createloader() {
     y: 150,
     stagger: 0.3,
   });
-  
+
   // Loader Counting Code
   tl.from("#line-part1, .line h2", {
     opacity: 0,
@@ -33,7 +32,6 @@ function Createloader() {
     display: "none",
   });
 
-  
   // Page 1 Code
   tl.from("#page1", {
     y: 1200,
@@ -43,23 +41,24 @@ function Createloader() {
   });
 
   // page 1 animation
-  tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1",{
-    y:120,
-    stagger:0.1,
-  })
+  tl.from("#hero1 h1,#hero2 h1,#hero4 h1", {
+    y: 120,
+    stagger: 0.1,
+  });
+
+  
 }
 
 // Mouse Code And page1 Element Magnet code
-function MouseCode(){
-  document.addEventListener("mousemove", function(dets){
-    gsap.to(".crsr",{
-     left:dets.x,
-     top:dets.y
-    })
- });
- 
- 
- Shery.makeMagnet("#nav-part2 h4, #svg",{});
+function MouseCode() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to(".crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+
+  Shery.makeMagnet("#nav-part2 h4, #svg, #hero3 h2", {});
 }
 // function Call
 Createloader();
