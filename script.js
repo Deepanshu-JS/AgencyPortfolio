@@ -33,15 +33,15 @@ function Createloader() {
   });
 
   // Page 1 Code
-  tl.from("#main", {
-    y:1000,
-    delay: 0.5,
-    opacity: 0,
-    duration: 0.5,
-  });
+
 
   // page 1 animation
-  tl.from("#hero1 h1,#hero2 h1,#hero4 h1", {
+  tl.from("#hero3 h2", {
+    y: 120,
+    stagger: 0.1,
+  });
+
+  tl.from("#hero1 h1,#hero2 h1, #hero4 h1", {
     y: 120,
     stagger: 0.1,
   });
