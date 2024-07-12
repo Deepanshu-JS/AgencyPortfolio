@@ -33,8 +33,8 @@ function Createloader() {
   });
 
   // Page 1 Code
-  tl.from("#page1", {
-    y: 1200,
+  tl.from("#main", {
+    y:1000,
     delay: 0.5,
     opacity: 0,
     duration: 0.5,
@@ -45,8 +45,6 @@ function Createloader() {
     y: 120,
     stagger: 0.1,
   });
-
-  
 }
 
 // Mouse Code And page1 Element Magnet code

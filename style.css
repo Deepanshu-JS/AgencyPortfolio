@@ -304,10 +304,9 @@ html.body {
 #page4-content .underline:nth-last-child(1) {
   margin: 6vw 0 7vw 0;
 }
-.pg p{
+.pg p {
   font-family: silkserif;
 }
-
 
 /* page5 code start */
 #page5 {
@@ -389,3 +388,6 @@ html.body {
   font-family: "silk serif";
   color: transparent;
 }
+
+/* footer */
+
