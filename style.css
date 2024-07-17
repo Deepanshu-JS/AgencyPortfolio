@@ -19,15 +19,15 @@ html.body {
 
 #main {
   position: relative;
-  background-color: #111;
+  background-color: #111 !important ;
   overflow-x: hidden;
 }
 
 /* cursor */
 .crsr {
-  height: 2.3vw;
-  width: 2.3vw;
-  border: 2px solid rgb(27, 174, 228);
+  height: 2.4vw;
+  width: 2.4vw;
+  border: 2px solid rgb(247, 247, 247);
   border-radius: 50%;
   position: fixed;
   z-index: 9999;
@@ -128,16 +128,21 @@ html.body {
   padding: 20vh 8vw;
 }
 
+#loader h4 {
+  margin-top: 3vw;
+  padding-left: 22vw;
+  padding-right: 50vw;
+  font-family: "silkserif";
+}
 /* Page1 Code start */
 
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: #151515;
 }
 
 #page1 {
-  background-color: rgb(27, 26, 26);
+  background-color: rgb(16, 15, 15);
 }
 
 /* page1 navbar Code */
@@ -173,19 +178,36 @@ html.body {
   line-height: 7vw;
 }
 
-#hero3 h2 {
-  font-size: 7vw;
+/* #hero1 > h1::before {
+  content: "01";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silkserif";
+  left: -10%;
+  top: -30%;
+} */
+/* 
+#hero3 h1 {
+  transition: all ease 0.7s;
+} */
+
+#hero3 h1 {
+  font-size: 6.8vw;
   text-transform: uppercase;
   line-height: 7vw;
   border-bottom: 0.6vw solid white;
-  transition: all ease 0.7s;
 }
-
 #hero3 {
   display: flex;
 }
 
-#hero3 h2:hover {
+#hero3 h2 {
+  font-size: 6.8vw;
+  margin-top: -1vw;
+}
+
+#hero3 h1:hover {
   -webkit-text-stroke: 0.4px #fff;
   color: transparent;
   font-weight: 100;
@@ -196,7 +218,7 @@ html.body {
 #page2 {
   height: 100vh;
   width: 100%;
-  background-color: rgb(27, 26, 26);
+  background-color: rgb(16, 15, 15);
 }
 
 #video-container {
@@ -220,7 +242,7 @@ html.body {
   position: relative;
   width: 100%;
   padding: 7vh 0;
-  background-color: rgb(27, 26, 26);
+  background-color: rgb(16, 15, 15);
 }
 
 #page4-content {
@@ -313,7 +335,7 @@ html.body {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: rgb(27, 26, 26);
+  background-color: rgb(16, 15, 15);
 }
 
 .elem {
@@ -391,3 +413,59 @@ html.body {
 
 /* footer */
 
+#footer {
+  height: 100vh;
+  width: 100%;
+  padding-left: 28vw;
+  padding-right: 5vw;
+  background-color: rgb(16, 15, 15);
+  position: relative;
+}
+
+#footer h1 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+}
+
+.underline {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+
+#footer-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 15vw;
+  padding-top: 4vw;
+}
+
+#footer-div h6 {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+}
+
+#footer-div h5 {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.last >h2 {
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.box {
+  width: 20%;
+}
+
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silkserif";
+  left: 19%;
+  top: 1%;
+}

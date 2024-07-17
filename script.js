@@ -32,16 +32,16 @@ function Createloader() {
     display: "none",
   });
 
-  // Page 1 Code
-
-
-  // page 1 animation
-  tl.from("#hero3 h2", {
-    y: 120,
-    stagger: 0.1,
+  //Page 1 Code
+  tl.from("#page1", {
+    y:1200,
+    delay: 0.5,
+    opacity: 0,
+    duration: 0.5,
   });
 
-  tl.from("#hero1 h1,#hero2 h1, #hero4 h1", {
+  // page 1 animation
+  tl.from("#hero1 h1,#hero2 h1,#hero3 h1,#hero3 h2,#hero4 h1", {
     y: 120,
     stagger: 0.1,
   });
@@ -56,8 +56,11 @@ function MouseCode() {
     });
   });
 
-  Shery.makeMagnet("#nav-part2 h4, #svg, #hero3 h2", {});
+  Shery.makeMagnet("#nav-part2 h4, #svg", {});
 }
+// Cursor hide code
+document.body.style.cursor = 'none';
+
 // function Call
 Createloader();
 MouseCode();
