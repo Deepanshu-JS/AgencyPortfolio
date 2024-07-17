@@ -38,6 +38,7 @@ function Createloader() {
     delay: 0.5,
     opacity: 0,
     duration: 0.5,
+    power:10,
   });
 
   // page 1 animation

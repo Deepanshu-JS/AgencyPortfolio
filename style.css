@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Plain Light";
-  src: url(./fonts/plain-regular-webfont.ttf);
+  src: url(./font/plain-regular-webfont.ttf);
 }
 
 @font-face {
   font-family: "Plain Light";
-  src: url(./fonts/plain-light-webfont.ttf);
+  src: url(./font/plain-light-webfont.ttf);
 }
 
 @font-face {
   font-family: "silk serif";
-  src: url(./fonts/silkserif-regularitalic-webfont.ttf);
+  src: url(./font/silkserif-regularitalic-webfont.ttf);
 }
 
 @font-face {
   font-family: "silk serif";
-  src: url(./fonts/silkserif-lightitalic-webfont.ttf);
+  src: url(./font/silkserif-lightitalic-webfont.ttf);
 }
 
 /* Basic Code */
@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Alef";
+  font-family: "Plain Light";
   color: white;
 }
 
@@ -79,7 +79,7 @@ html.body {
 
 @keyframes anime1 {
   0% {
-    font-family: "Alef";
+    font-family: "plain light";
     -webkit-text-stroke: 1px #fff;
     color: #fff;
     font-weight: 900;
@@ -87,7 +87,7 @@ html.body {
   }
 
   47% {
-    font-family: "Alef";
+    font-family: "plain light";
     -webkit-text-stroke: 1px #fff;
     color: #fff;
     font-weight: 900;
@@ -115,7 +115,7 @@ html.body {
 #line1-part1 h6 {
   font-size: 5vw;
   font-weight: 100;
-  font-family: "silkserif";
+  font-family: "silk serif";
 }
 
 #line1-part1 h6 {
@@ -147,7 +147,7 @@ html.body {
   margin-top: 3vw;
   padding-left: 22vw;
   padding-right: 50vw;
-  font-family: "silkserif";
+  font-family: "silk serif";
 }
 /* Page1 Code start */
 
@@ -180,7 +180,7 @@ html.body {
 .hero {
   width: 72%;
   margin-left: 27%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .hero:nth-child(2) {
@@ -191,17 +191,18 @@ html.body {
   font-size: 7vw;
   text-transform: uppercase;
   line-height: 7vw;
+  position: relative;
 }
 
-/* #hero1 > h1::before {
+#hero1::before {
   content: "01";
   position: absolute;
   font-size: 3vw;
   font-weight: 100;
-  font-family: "silkserif";
-  left: -10%;
-  top: -30%;
-} */
+  font-family: "silk serif";
+  left: 20%;
+  top: 29%;
+}
 /* 
 #hero3 h1 {
   transition: all ease 0.7s;
@@ -219,7 +220,7 @@ html.body {
 
 #hero3 h2 {
   font-size: 6.8vw;
-  margin-top: -1vw;
+  margin-top: -0.7vw;
 }
 
 #hero3 h1:hover {
@@ -277,7 +278,7 @@ html.body {
   position: absolute;
   font-size: 3vw;
   font-weight: 100;
-  font-family: "silkserif";
+  font-family: "silk serif";
   left: -12%;
   top: 8%;
 }
@@ -480,7 +481,7 @@ html.body {
   position: absolute;
   font-size: 3vw;
   font-weight: 100;
-  font-family: "silkserif";
+  font-family: "silk serif";
   left: 19%;
   top: 1%;
 }
