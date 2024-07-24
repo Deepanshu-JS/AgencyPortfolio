@@ -1,3 +1,9 @@
+//Locomotive
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true
+});
+
 // Loader Code
 function Createloader() {
   var tl = gsap.timeline();
