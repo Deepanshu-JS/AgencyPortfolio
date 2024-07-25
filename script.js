@@ -1,8 +1,42 @@
 //Locomotive
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
-  smooth: true
-});
+function LocoCode() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Initialize Locomotive Scroll
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector("#main"),
+    smooth: true,
+  });
+
+  // Update ScrollTrigger when Locomotive Scroll updates
+  locoScroll.on("scroll", ScrollTrigger.update);
+
+  // Set up ScrollTrigger to use Locomotive Scroll's methods for the ".main" container
+  ScrollTrigger.scrollerProxy("#main", {
+    scrollTop(value) {
+      return arguments.length
+        ? locoScroll.scrollTo(value, 0, 0)
+        : locoScroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+    },
+    pinType: document.querySelector("#main").style.transform
+      ? "transform"
+      : "fixed",
+  });
+
+  // Refresh Locomotive Scroll and ScrollTrigger when the window updates
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+  // Refresh ScrollTrigger after setup
+  ScrollTrigger.refresh();
+}
 
 // Loader Code
 function Createloader() {
@@ -40,11 +74,11 @@ function Createloader() {
 
   //Page 1 Code
   tl.from("#page1", {
-    y:1200,
+    y: 1200,
     delay: 0.5,
     opacity: 0,
     duration: 0.5,
-    power:10,
+    power: 10,
   });
 
   // page 1 animation
@@ -66,8 +100,9 @@ function MouseCode() {
   Shery.makeMagnet("#nav-part2 h4, #svg", {});
 }
 // Cursor hide code
-document.body.style.cursor = 'none';
+document.body.style.cursor = "none";
 
 // function Call
 Createloader();
 MouseCode();
+LocoCode();
